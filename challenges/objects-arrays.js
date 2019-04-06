@@ -115,8 +115,17 @@ for (let i = 0; i < graduates.length; i++) {
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-const uni = [];
+let uni = [];
+for (let i = 0; i < graduates.length; i++) {
+	if (graduates[i].university === "Uni") {
+		uni.push(graduates[i].university)
+	}
+}
+
+
+
 console.log(uni);
+
 
 
 // ==== ADVANCED Array Methods ====
@@ -164,7 +173,9 @@ console.log(lowerCase);
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
 
 */
-const largerPopulation = [];
+const largerPopulation = zooAnimals.filter((animals) => {
+	return animals.population < 5;
+})
 console.log(largerPopulation);
 
 /* Request 4: .reduce() 

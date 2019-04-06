@@ -37,7 +37,7 @@ function greeting(first, second) {
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: It has to do with scope. Everything will try to find meaning inside it's local block scope. If there is a variable that does not have meaning inside the local scope, it will look for meaning outside that scope. for example, insdie the function you have external. It does not have meaning insdie the local scope. It has to look outwards for meaning. Scope goes as far as global scope then stops. g
+// Explanation: It has to do with scope. Everything will try to find meaning inside it's local block scope. If there is a variable that does not have meaning inside the local scope, it will look for meaning outside that scope. for example, insdie the function you have external. It does not have meaning insdie the local scope. It has to look outwards for meaning. Scope goes as far as global scope then stops. 
 
 
 const external = "I'm outside the function";
